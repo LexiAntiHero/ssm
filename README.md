@@ -12,7 +12,7 @@ To run this project, you will need to have the following installed:
 - **MyBatis**
 - **Redis**
 - **Vue 3**
-- **MySQL 8.0.38 **
+- **MySQL 8.0.38**
 
 ## Project Structure
 - **ssm-backend/**: Contains the backend code based on Spring Boot.

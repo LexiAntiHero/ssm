@@ -9,92 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59dd3388-4a6b-4eee-a2d6-de68bc1f8c1d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/admin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/HasPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/HasRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/Repeat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/aspect/PermissionAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/configuration/CustomObjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/configuration/RestConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/configuration/ThreadPoolConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/constant/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmOperLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmRoleMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmUserRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/core/RedisTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/core/XssHttpServletRequestWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmMenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmOperLogDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmRoleMenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmUserRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmBaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmLoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmOperLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmRoleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/PasswordIncorrectException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/PermissionNeedHasException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/RoleNeedHasException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/filter/XssFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/interceptor/RepeatSubmitInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmOperLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmRoleMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmUserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmOperLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmRoleMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmUserRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/ssmEnum/DeleteFlagEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/util/AuthUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/util/XssUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmMenuDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmOperLogDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmRoleDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmRoleMenuDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmUserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmUserRoleDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system-admin/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/components/HelloWorld.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/store/modules/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydl-ui/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/vue.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="59dd3388-4a6b-4eee-a2d6-de68bc1f8c1d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -396,7 +311,7 @@
       <workItem from="1721592310077" duration="15434000" />
       <workItem from="1722036555024" duration="15738000" />
       <workItem from="1722095543836" duration="106733000" />
-      <workItem from="1724420267334" duration="9917000" />
+      <workItem from="1724420267334" duration="10524000" />
     </task>
     <servers />
   </component>
