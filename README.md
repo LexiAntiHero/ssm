@@ -35,9 +35,9 @@ To run this project, you will need to have the following installed:
    - Update the `jdbc.properties` file with your database credentials.
    - Example:
      ```properties
-     spring.datasource.url=jdbc:mysql://localhost:3306/your-database
-     spring.datasource.username=your-username
-     spring.datasource.password=your-password
+     datasource.url=jdbc:mysql://localhost:3306/your-database
+     datasource.username=your-username
+     datasource.password=your-password
      ```
 
 
