@@ -1,6 +1,8 @@
-package com.ssm.configuration;
+package com.ssm.core;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.ssm.configuration.CustomObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
@@ -9,6 +11,7 @@ import redis.clients.jedis.exceptions.JedisException;
 
 import javax.annotation.Resource;
 import java.util.Optional;
+import java.util.Set;
 
 @Component
 @Slf4j
@@ -108,20 +111,53 @@ public class RedisTemplate {
         return Optional.empty();
     }
 
-    public <T> Optional<T> getObject(String key, TypeReference<T> typeReference) {
+    public <T> T getObject(String key, TypeReference<T> typeReference) {
+
         Jedis jedis = jedisPool.getResource();
-        String returnValue = null;
-        try {
-            // If the operation is successful, it returns the value
+        T returnValue = null;
+        try{
+            // 如果操作成功会返回“ok”字符串，
             String objectValue = jedis.get(key);
-            return objectValue == null ? Optional.empty() : Optional.of(objectMapper.readValue(objectValue, typeReference));
-        } catch (JedisException | JsonProcessingException e) {
+            returnValue = objectMapper.readValue(objectValue, typeReference);
+        }catch (JedisException | JsonProcessingException e ) {
             jedisPool.returnBrokenResource(jedis);
-            log.error("Redis execution error!", e);
+            log.error("Redis execution error !",e);
         } finally {
             jedisPool.returnResource(jedis);
         }
-        return Optional.empty();
+        return returnValue;
+    }
+
+    public Long expire(String key,  Long expire) {
+
+        Jedis jedis = jedisPool.getResource();
+        Long exp = -1L;
+        try{
+            // 如果操作成功会返回“ok”字符串，
+            exp = jedis.expire(key, expire);
+        }catch (JedisException e ) {
+            jedisPool.returnBrokenResource(jedis);
+            log.error("Redis execution error !",e);
+        } finally {
+            jedisPool.returnResource(jedis);
+        }
+        return exp;
+    }
+
+    public Set<String> keys(String pattern) {
+
+        Jedis jedis = jedisPool.getResource();
+        Set<String> res = null;
+        try{
+            // 如果操作成功会返回“ok”字符串，
+            res = jedis.keys(pattern);
+        }catch (JedisException e ) {
+            jedisPool.returnBrokenResource(jedis);
+            log.error("Redis execution error !",e);
+        } finally {
+            jedisPool.returnResource(jedis);
+        }
+        return res;
     }
 
     /**
@@ -131,17 +167,17 @@ public class RedisTemplate {
      */
     public Long remove(String... key) {
         Jedis jedis = jedisPool.getResource();
-        String returnValue = null;
+        Long returnValue = 0L;
         try {
             // If the operation is successful, it returns the number of keys removed
-            return jedis.del(key);
+            returnValue = jedis.del(key);
         } catch (JedisException e) {
             jedisPool.returnBrokenResource(jedis);
             log.error("Redis execution error!", e);
         } finally {
             jedisPool.returnResource(jedis);
         }
-        return -1L;
+        return returnValue;
     }
 
     public Long lpush(String key, String... value) {

@@ -4,13 +4,13 @@ import java.util.Date;
 import java.io.Serializable;
 
 /**
- * Operation Log(SsmOperLog)实体类
+ * Operation Log(SsmOperLog)
  *
  * @author makejava
- * @since 2024-07-26 20:56:27
+ * @since 2024-07-27 05:35:46
  */
 public class SsmOperLog implements Serializable {
-    private static final long serialVersionUID = -94647117105646879L;
+    private static final long serialVersionUID = -38500805042166715L;
 /**
      * Log ID
      */

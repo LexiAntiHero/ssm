@@ -15,18 +15,18 @@
         <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
-    <!--查询单个-->
+
     <select id="queryById" resultMap="SsmRoleMap">
         select
-role_idrole_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupdate_time
+role_id, role_name, role_tag, role_sort, status, del_flag, create_by, create_time, update_by, update_time
         from SSM_role
         where role_id = #{roleId}
     </select>
 
-    <!--查询指定行数据-->
+
     <select id="queryAllByLimit" resultMap="SsmRoleMap">
         select
-role_idrole_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupdate_time
+role_id, role_name, role_tag, role_sort, status, del_flag, create_by, create_time, update_by, update_time
         from SSM_role
         <where>
             <if test="roleId != null">
@@ -63,7 +63,7 @@ role_idrole_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupda
         limit #{pageable.offset}, #{pageable.pageSize}
     </select>
 
-    <!--统计总行数-->
+
     <select id="count" resultType="java.lang.Long">
         select count(1)
         from SSM_role
@@ -101,14 +101,14 @@ role_idrole_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupda
         </where>
     </select>
 
-    <!--新增所有列-->
+
     <insert id="insert" keyProperty="roleId" useGeneratedKeys="true">
-        insert into SSM_role(role_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupdate_time)
+        insert into SSM_role(role_name, role_tag, role_sort, status, del_flag, create_by, create_time, update_by, update_time)
         values (#{roleName}#{roleTag}#{roleSort}#{status}#{delFlag}#{createBy}#{createTime}#{updateBy}#{updateTime})
     </insert>
 
     <insert id="insertBatch" keyProperty="roleId" useGeneratedKeys="true">
-        insert into SSM_role(role_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupdate_time)
+        insert into SSM_role(role_name, role_tag, role_sort, status, del_flag, create_by, create_time, update_by, update_time)
         values
         <foreach collection="entities" item="entity" separator=",">
         (#{entity.roleName}#{entity.roleTag}#{entity.roleSort}#{entity.status}#{entity.delFlag}#{entity.createBy}#{entity.createTime}#{entity.updateBy}#{entity.updateTime})
@@ -116,7 +116,7 @@ role_idrole_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupda
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="roleId" useGeneratedKeys="true">
-        insert into SSM_role(role_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupdate_time)
+        insert into SSM_role(role_name, role_tag, role_sort, status, del_flag, create_by, create_time, update_by, update_time)
         values
         <foreach collection="entities" item="entity" separator=",">
             (#{entity.roleName}#{entity.roleTag}#{entity.roleSort}#{entity.status}#{entity.delFlag}#{entity.createBy}#{entity.createTime}#{entity.updateBy}#{entity.updateTime})
@@ -125,7 +125,7 @@ role_idrole_namerole_tagrole_sortstatusdel_flagcreate_bycreate_timeupdate_byupda
 role_name = values(role_name)role_tag = values(role_tag)role_sort = values(role_sort)status = values(status)del_flag = values(del_flag)create_by = values(create_by)create_time = values(create_time)update_by = values(update_by)update_time = values(update_time)
     </insert>
 
-    <!--通过主键修改数据-->
+
     <update id="update">
         update SSM_role
         <set>
@@ -160,7 +160,7 @@ role_name = values(role_name)role_tag = values(role_tag)role_sort = values(role_
         where role_id = #{roleId}
     </update>
 
-    <!--通过主键删除-->
+
     <delete id="deleteById">
         delete from SSM_role where role_id = #{roleId}
     </delete>

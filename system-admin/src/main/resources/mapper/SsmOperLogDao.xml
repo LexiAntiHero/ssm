@@ -16,18 +16,18 @@
         <result property="opertime" column="operTime" jdbcType="TIMESTAMP"/>
     </resultMap>
 
-    <!--查询单个-->
+
     <select id="queryById" resultMap="SsmOperLogMap">
         select
-oper_idtitlebusiness_typemethodrequest_methodoper_nameoper_urloper_ipstatuserrorMsgoperTime
+oper_id, title, business_type, method, request_method, oper_name, oper_url, oper_ip, status, errorMsg, operTime
         from SSM_oper_log
         where oper_id = #{operId}
     </select>
 
-    <!--查询指定行数据-->
+
     <select id="queryAllByLimit" resultMap="SsmOperLogMap">
         select
-oper_idtitlebusiness_typemethodrequest_methodoper_nameoper_urloper_ipstatuserrorMsgoperTime
+oper_id, title, business_type, method, request_method, oper_name, oper_url, oper_ip, status, errorMsg, operTime
         from SSM_oper_log
         <where>
             <if test="operId != null">
@@ -67,7 +67,7 @@ oper_idtitlebusiness_typemethodrequest_methodoper_nameoper_urloper_ipstatuserror
         limit #{pageable.offset}, #{pageable.pageSize}
     </select>
 
-    <!--统计总行数-->
+
     <select id="count" resultType="java.lang.Long">
         select count(1)
         from SSM_oper_log
@@ -108,31 +108,31 @@ oper_idtitlebusiness_typemethodrequest_methodoper_nameoper_urloper_ipstatuserror
         </where>
     </select>
 
-    <!--新增所有列-->
+
     <insert id="insert" keyProperty="operId" useGeneratedKeys="true">
-        insert into SSM_oper_log(titlebusiness_typemethodrequest_methodoper_nameoper_urloper_ipstatuserrorMsgoperTime)
-        values (#{title}#{businessType}#{method}#{requestMethod}#{operName}#{operUrl}#{operIp}#{status}#{errormsg}#{opertime})
+        insert into SSM_oper_log(title, business_type, method, request_method, oper_name, oper_url, oper_ip, status, errorMsg, operTime)
+        values (#{title}, #{businessType},#{method},#{requestMethod},#{operName},#{operUrl},#{operIp},#{status},#{errormsg},#{opertime})
     </insert>
 
     <insert id="insertBatch" keyProperty="operId" useGeneratedKeys="true">
-        insert into SSM_oper_log(titlebusiness_typemethodrequest_methodoper_nameoper_urloper_ipstatuserrorMsgoperTime)
+        insert into SSM_oper_log(title, business_type, method, request_method, oper_name, oper_url, oper_ip, status, errorMsg, operTime)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.title}#{entity.businessType}#{entity.method}#{entity.requestMethod}#{entity.operName}#{entity.operUrl}#{entity.operIp}#{entity.status}#{entity.errormsg}#{entity.opertime})
+        (#{entity.title},#{entity.businessType},#{entity.method},#{entity.requestMethod},#{entity.operName},#{entity.operUrl},#{entity.operIp},#{entity.status},#{entity.errormsg},#{entity.opertime})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="operId" useGeneratedKeys="true">
-        insert into SSM_oper_log(titlebusiness_typemethodrequest_methodoper_nameoper_urloper_ipstatuserrorMsgoperTime)
+        insert into SSM_oper_log(title, business_type, method, request_method, oper_name, oper_url, oper_ip, status, errorMsg, operTime)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.title}#{entity.businessType}#{entity.method}#{entity.requestMethod}#{entity.operName}#{entity.operUrl}#{entity.operIp}#{entity.status}#{entity.errormsg}#{entity.opertime})
+            (#{entity.title},#{entity.businessType},#{entity.method},#{entity.requestMethod},#{entity.operName},#{entity.operUrl},#{entity.operIp},#{entity.status},#{entity.errormsg},#{entity.opertime})
         </foreach>
         on duplicate key update
 title = values(title)business_type = values(business_type)method = values(method)request_method = values(request_method)oper_name = values(oper_name)oper_url = values(oper_url)oper_ip = values(oper_ip)status = values(status)errorMsg = values(errorMsg)operTime = values(operTime)
     </insert>
 
-    <!--通过主键修改数据-->
+
     <update id="update">
         update SSM_oper_log
         <set>
@@ -170,7 +170,7 @@ title = values(title)business_type = values(business_type)method = values(method
         where oper_id = #{operId}
     </update>
 
-    <!--通过主键删除-->
+
     <delete id="deleteById">
         delete from SSM_oper_log where oper_id = #{operId}
     </delete>

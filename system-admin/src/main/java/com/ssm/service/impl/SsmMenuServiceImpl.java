@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * Menu Permissions Table(SsmMenu)表服务实现类
  *
  * @author makejava
- * @since 2024-07-26 20:56:21
+ * @since 2024-07-27 05:35:46
  */
 @Service("ssmMenuService")
 public class SsmMenuServiceImpl implements SsmMenuService {

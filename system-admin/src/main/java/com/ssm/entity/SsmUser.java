@@ -1,16 +1,27 @@
 package com.ssm.entity;
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
 /**
- * User Information Table(SsmUser)实体类
+ * User Information Table(SsmUser)
  *
  * @author makejava
- * @since 2024-07-26 20:56:27
+ * @since 2024-07-27 05:35:46
  */
-public class SsmUser implements Serializable {
-    private static final long serialVersionUID = -72425760209957086L;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class SsmUser extends SsmBaseEntity implements Serializable {
+    private static final long serialVersionUID = -25027710659979270L;
 /**
      * User ID
      */
@@ -18,6 +29,8 @@ public class SsmUser implements Serializable {
 /**
      * Username
      */
+    @NotNull
+    @Size(min = 5, max = 15, message = "The length of username should be between 5 and 15.")
     private String userName;
 /**
      * Nickname
@@ -26,10 +39,12 @@ public class SsmUser implements Serializable {
 /**
      * User Email
      */
+    @Email
     private String email;
 /**
      * Phone Number
      */
+
     private String phonenumber;
 /**
      * User Gender (0 Male 1 Female 2 Unknown)
@@ -42,6 +57,8 @@ public class SsmUser implements Serializable {
 /**
      * Password
      */
+    @NotNull
+    @Size(min = 5, max = 15, message = "The length of password should be between 5 and 15.")
     private String password;
 /**
      * Account Status (0 Active 1 Disabled)
@@ -76,134 +93,6 @@ public class SsmUser implements Serializable {
      */
     private Date updateTime;
 
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhonenumber() {
-        return phonenumber;
-    }
-
-    public void setPhonenumber(String phonenumber) {
-        this.phonenumber = phonenumber;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getDelFlag() {
-        return delFlag;
-    }
-
-    public void setDelFlag(String delFlag) {
-        this.delFlag = delFlag;
-    }
-
-    public String getLoginIp() {
-        return loginIp;
-    }
-
-    public void setLoginIp(String loginIp) {
-        this.loginIp = loginIp;
-    }
-
-    public Date getLoginDate() {
-        return loginDate;
-    }
-
-    public void setLoginDate(Date loginDate) {
-        this.loginDate = loginDate;
-    }
-
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
-
+    private List<SsmRole> ssmRoles;
 }
 

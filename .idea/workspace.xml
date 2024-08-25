@@ -1,40 +1,381 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="admin" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59dd3388-4a6b-4eee-a2d6-de68bc1f8c1d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/admin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/HasPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/HasRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/annotation/Repeat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/aspect/PermissionAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/configuration/CustomObjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/configuration/RestConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/configuration/ThreadPoolConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/constant/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmOperLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmRoleMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/SsmUserRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/core/RedisTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/core/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmOperLogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmRoleMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/dao/SsmUserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmBaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmLoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmOperLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/entity/SsmUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/PasswordIncorrectException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/PermissionNeedHasException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/RoleNeedHasException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/interceptor/RepeatSubmitInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmOperLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/SsmUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmOperLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/service/impl/SsmUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/ssmEnum/DeleteFlagEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/util/AuthUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/java/com/ssm/util/XssUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmMenuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmOperLogDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmRoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmRoleMenuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmUserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/src/main/resources/mapper/SsmUserRoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system-admin/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/src/store/modules/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydl-ui/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ydl-ui/vue.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LexiAntiHero&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LexiAntiHero/ssm.git&quot;,
+    &quot;accountId&quot;: &quot;70fa4707-4fd9-41b7-9de6-3c53a6401dff&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/system-admin/pom.xml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2jConcKNNHtlS9FWIfnxNPdyO6j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/lexizo/Desktop/My Project/ssm/src/main/java/com/ssm/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.JdbcTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lexizo/Desktop/My Project/ssm/system-admin/src/main/java/com/ssm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/lexizo/Desktop/My Project/ssm/system-admin/src/main/java/com/ssm/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ssm.exception" />
+      <recent name="com.ssm.constant" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/system-admin/src/main/java/com/ssm" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ssm.annotation" />
+      <recent name="com.ssm.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration name="JdbcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssm.JdbcTest" />
+      <module name="system-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.91" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="admin">
+          <settings>
+            <option name="CONTEXT_PATH" value="/admin" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="e6dff8f4-1e1f-4359-b482-62921bd166bf" />
+        <option name="HTTP_PORT" value="8088" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52059" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="admin" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="ec5d69f7-71c9-4477-9e0e-dba19a10a105" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53037" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JdbcTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -51,9 +392,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720900587742</updated>
-      <workItem from="1720900588787" duration="1000" />
+      <workItem from="1720900588787" duration="21868000" />
+      <workItem from="1721592310077" duration="15434000" />
+      <workItem from="1722036555024" duration="15738000" />
+      <workItem from="1722095543836" duration="106733000" />
+      <workItem from="1724420267334" duration="9917000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -63,7 +411,21 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" log-message="true" log-stack="true" type="java-exception">
+          <dependency master-id="0" />
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="java-exception">
+          <dependency id="0" />
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

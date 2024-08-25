@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * Role Information Table(SsmRole)表服务实现类
  *
  * @author makejava
- * @since 2024-07-26 20:56:27
+ * @since 2024-07-27 05:35:46
  */
 @Service("ssmRoleService")
 public class SsmRoleServiceImpl implements SsmRoleService {

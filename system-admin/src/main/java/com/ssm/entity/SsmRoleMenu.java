@@ -3,13 +3,13 @@ package com.ssm.entity;
 import java.io.Serializable;
 
 /**
- * Role and Menu Association Table(SsmRoleMenu)实体类
+ * Role and Menu Association Table(SsmRoleMenu)
  *
  * @author makejava
- * @since 2024-07-26 20:56:27
+ * @since 2024-07-27 05:35:46
  */
 public class SsmRoleMenu implements Serializable {
-    private static final long serialVersionUID = -65347709023670027L;
+    private static final long serialVersionUID = 479276664081456108L;
 /**
      * Role ID
      */

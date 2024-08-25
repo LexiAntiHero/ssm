@@ -3,13 +3,13 @@ package com.ssm.entity;
 import java.io.Serializable;
 
 /**
- * User and Role Association Table(SsmUserRole)实体类
+ * User and Role Association Table(SsmUserRole)
  *
  * @author makejava
- * @since 2024-07-26 20:56:27
+ * @since 2024-07-27 05:35:46
  */
 public class SsmUserRole implements Serializable {
-    private static final long serialVersionUID = 688209668283373003L;
+    private static final long serialVersionUID = -94506801750502223L;
 /**
      * User ID
      */
